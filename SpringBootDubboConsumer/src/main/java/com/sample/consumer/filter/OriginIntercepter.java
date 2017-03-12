@@ -11,7 +11,6 @@ public class OriginIntercepter implements HandlerInterceptor{
 	@Override
 	public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler)
 			throws Exception {
-		// TODO Auto-generated method stub
 		response.setHeader("Access-Control-Allow-Origin", "*");
 		return true;
 	}
